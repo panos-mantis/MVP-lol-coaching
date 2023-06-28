@@ -1,0 +1,27 @@
+.heroContainer {
+  height: 60vh;
+  width: 100%;
+  background-color: rgb(85, 255, 0);
+}
+
+.heroSection {
+  height: 60vh;
+  width: 100%;
+  background-image: url(https://images.pexels.com/photos/1298684/pexels-photo-1298684.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10%;
+  filter: blur(6px);
+}
+
+.heroText {
+  font-size: 30px;
+  position: relative;
+  top: -70%;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.553);
+  border: 2px solid whitesmoke;
+}
