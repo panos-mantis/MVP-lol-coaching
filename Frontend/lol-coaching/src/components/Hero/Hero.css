@@ -5,14 +5,14 @@
 }
 
 .heroSection {
-  height: 60vh;
+  height: 570px;
   width: 100%;
   background-image: url(https://images.pexels.com/photos/1298684/pexels-photo-1298684.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 10%;
-  filter: blur(6px);
+  filter: blur(2px);
 }
 
 .heroText {
@@ -25,3 +25,5 @@
   background-color: rgba(128, 128, 128, 0.553);
   border: 2px solid whitesmoke;
 }
+
+

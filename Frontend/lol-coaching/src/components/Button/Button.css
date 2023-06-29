@@ -1,0 +1,12 @@
+.heroButton{
+    background-color: red;
+    width: 500px;
+    padding: 20px 0px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    position: relative;
+    top: -56%;
+    border-radius: 10px;
+    font-size: 30px;
+}
