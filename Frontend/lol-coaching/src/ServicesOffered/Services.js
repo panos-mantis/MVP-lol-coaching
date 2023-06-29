@@ -9,8 +9,8 @@ const Services = () => {
       <ServicesHeader />
       <div className='textBoxContainer'>
         <ServicesTextBox  textBoxHeader="Fundamentals" textBoxParagraph="POTATOOOO"/>
-        <ServicesTextBox  textBoxHeader="Fundamentals" textBoxParagraph="POTATOOOO"/>
-        <ServicesTextBox  textBoxHeader="Fundamentals" textBoxParagraph="POTATOOOO"/>
+        <ServicesTextBox  textBoxHeader="Intermediate Concepts" textBoxParagraph="POTATOOOO"/>
+        <ServicesTextBox  textBoxHeader="Competitive Coaching" textBoxParagraph="POTATOOOO"/>
       </div>  
     </div>
   )

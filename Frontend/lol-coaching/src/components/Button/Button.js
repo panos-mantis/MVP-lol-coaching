@@ -6,7 +6,7 @@ const Button = ({ to, btnText }) => {
   const navigate = useNavigate();
 
   return (
-    <button onClick={()=>navigate({to})} className="heroButton">
+    <button onClick={()=>navigate(to)} className="heroButton">
       {btnText}
     </button>
   );
