@@ -1,7 +1,7 @@
 .heroContainer {
-  height: 60vh;
+  height: 570px;
   width: 100%;
-  background-color: rgb(85, 255, 0);
+  /* background-color: rgb(85, 255, 0); */
 }
 
 .heroSection {
@@ -12,7 +12,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 10%;
-  filter: blur(2px);
+  filter: blur(4px);
 }
 
 .heroText {
@@ -25,5 +25,6 @@
   background-color: rgba(128, 128, 128, 0.553);
   border: 2px solid whitesmoke;
 }
+
 
 

@@ -1,11 +1,13 @@
 import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter , Routes ,Route} from "react-router-dom";
 import Hero from "./components/Hero/Hero";
+import Services from "./ServicesOffered/Services";
 function App() {
   return (
     <div className="App">
       <Navbar/>
       <Hero/>
+      <Services/>
       {/* <Routes>
         <Route to="/" element={<Home/>}/>
         <Route to="/about" element={<About/>}/>

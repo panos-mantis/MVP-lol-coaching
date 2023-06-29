@@ -1,0 +1,30 @@
+.servicesContainer{
+    background-color: greenyellow;
+    padding-top: 50px;
+    height: 317px;
+
+}
+
+.servicesHeader{
+ text-align: center;
+ margin-bottom: 20px;
+ font-size: 40px;
+ letter-spacing: 1vb;
+}
+
+.textBoxContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+
+.textBox{
+    background-color: red;
+    flex: 1;
+    margin: 0 100px;
+    text-align: center;
+    min-height: 190px;
+
+
+}
