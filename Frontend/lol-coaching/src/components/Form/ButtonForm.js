@@ -7,7 +7,7 @@ const axios = require('axios');
 const ButtonForm = ({ sign, btnText , email, password }) => {
  
   return (
-    <button type="submit" className="heroButton">
+    <button type="submit" className="formButton">
       {btnText}
     </button>
   );
