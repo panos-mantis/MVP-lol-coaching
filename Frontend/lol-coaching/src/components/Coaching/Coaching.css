@@ -1,0 +1,19 @@
+.coachingHeader{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 40px;
+    letter-spacing: 1vb;
+    text-align: center;
+}
+
+.quote{
+    width: 80%;
+    margin: 50px auto;
+    padding: 50px 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    background-color: rgba(128, 128, 128, 0.514);
+    border: 1px solid black;
+    border-radius: 3px;
+}

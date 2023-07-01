@@ -30,7 +30,7 @@ const FormIn = () => {
     <form onSubmit={handleSubmit} className="signForm">
       <InputLabel same="email" labelText="email" handleChange={(e)=>handleChangeEmail(e)}/>
       <InputLabel same="password" labelText="password" handleChange={(e)=>handleChangePassword(e)}/>
-      <ButtonForm sign="/sign-in" btnText="Sign in"  email={email} password={password}/> 
+      <ButtonForm  btnText="Sign In"  email={email} password={password}/> 
     </form>
   );
 };
