@@ -1,10 +1,7 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-
-const axios = require('axios');
 
 
-const ButtonForm = ({ sign, btnText , email, password }) => {
+const ButtonForm = ({  btnText }) => {
  
   return (
     <button type="submit" className="formButton">

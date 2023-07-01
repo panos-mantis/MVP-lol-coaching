@@ -3,7 +3,7 @@ const userController = require("./controllers")
 
 
 router.post("/signup",userController.postOneUser)
-router.post("/login",userController.findOneUser)
+router.post("/signin",userController.findOneUser)
 
 
 

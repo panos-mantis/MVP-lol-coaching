@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeaderForm = ({headerText}) => {
   return (
-    <h1>{headerText}</h1>
+    <h1 className='headerForm'>{headerText}</h1>
   )
 }
 
