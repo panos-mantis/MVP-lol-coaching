@@ -30,12 +30,13 @@ const ReviewCreate = () => {
         }
       }
   return (
-    <>
+    <div className='reviewContainer'>  
+        <h1 className='headerForm'>Write a review</h1>
         <form id='reviewForm' onSubmit={(event)=>handleSubmit(event)}>
             <InputLabel same="email"  labelText="email" handleChange={(e)=>handleChangeEmail(e)}/>
             <TextArea handleChange={(e)=>handleChangeText(e)} forForm="reviewForm" handleChangeNumber={(e)=>handleChangeNumber(e)}/>
         </form>
-    </>
+    </div>
   )
 }
 

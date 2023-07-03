@@ -16,9 +16,13 @@ const TextArea = ({handleChange , forForm ,handleChangeNumber}) => {
           onChange={(e) => {
             handleChange(e);
           }}
-          className="inputLabel"
+          className="inputTextArea inputField"
         />
-        <label htmlFor="reviewNumber" className="textLabel inputLabel" >
+        
+        
+      </div>
+      <div className="inputContainer">
+      <label htmlFor="reviewNumber" className="textLabel inputLabel" >
           Number
         </label>
         <select
@@ -28,7 +32,7 @@ const TextArea = ({handleChange , forForm ,handleChangeNumber}) => {
           onChange={(e) => {
             handleChangeNumber(e);
           }}
-          className="optionsField"
+          className="inputField"
         >
             <option value="1">1</option>
             <option value="2">2</option>
@@ -36,9 +40,8 @@ const TextArea = ({handleChange , forForm ,handleChangeNumber}) => {
             <option value="4">4</option>
             <option value="5">5</option>
         </select>
-        <button className="formButton">Submit !</button>
       </div>
-
+      <button className="formButton">Submit !</button>    
     </>
   );
 };
