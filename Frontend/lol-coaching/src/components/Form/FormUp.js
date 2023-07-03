@@ -18,10 +18,12 @@ const FormUp = () => {
     event.preventDefault();
     try {
         const response = await axios.post('http://localhost:4000/user/signup', {email:email, password:password});
-        console.log(response);
-        navigate("/coaching")
+        if(response){
+          localStorage.setItem("token", response.token)
+          navigate("/coaching")
+        }
     } catch (error) {
-      console.error(error.message);
+      alert(error.message);
     }
   }
     

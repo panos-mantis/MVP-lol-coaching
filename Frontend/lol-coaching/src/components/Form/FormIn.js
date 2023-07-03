@@ -18,7 +18,7 @@ const FormIn = () => {
     event.preventDefault();
     try {
         const response = await axios.post('http://localhost:4000/user/signin', {email:email, password:password});
-        console.log(response);
+        localStorage.setItem("token", response.data.token);
         navigate("/coaching")
     } catch (error) {
       console.error(error.message);

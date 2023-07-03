@@ -4,7 +4,8 @@ import Home from "./Home";
 import SignUp from "./SignUp";
 import SignIn from "./SignIn";
 import Coaching from "./Coaching";
-
+import ReviewSee from "./ReviewSee"
+import ReviewCreate from "./ReviewCreate"
 function App() {
   return (
     <div className="App">
@@ -13,7 +14,8 @@ function App() {
         <Route path="*" element={<p>Path not resolved</p>} />
         <Route path="/sign-in" element={<SignIn/>}/>
         <Route path="/sign-up" element={<SignUp/>}/>
-        {/* <Route path="/about" element={<About/>}/> */}
+        <Route path="/reviews" element={<ReviewSee/>}/>
+        <Route path="/reviewsCreate" element={<ReviewCreate/>}/>
         <Route path="/coaching" element={<Coaching/>}/>
         
       </Routes>
