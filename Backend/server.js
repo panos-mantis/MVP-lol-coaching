@@ -10,6 +10,7 @@ app.use(cors({
 const userRouter = require("./router.js")
 
 app.use("/user", userRouter)
+app.use("/review", userRouter)
 
 app.listen(4000,()=>{
     console.log("server is running on port 4000")
