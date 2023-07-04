@@ -1,0 +1,25 @@
+.reviewsContainer{
+  /*   width: 60%;
+    
+    display: grid;
+    justify-content: space-between;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    margin-top: 5%;
+    background-color: rgba(128, 128, 128, 0.733);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    list-style-type: none;
+    
+}
+
+.reviewLine{
+    width: 80%;
+    background-color: brown;
+    margin:10px auto;
+    border: 1px solid black;
+    text-align: center;
+}
