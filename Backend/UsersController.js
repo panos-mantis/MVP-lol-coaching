@@ -9,7 +9,10 @@ let postOneUser = async(req,res)=>{
             bcrypt.hash(req.body.password, salt , async(err, hash)=> {
                 let userToPost = new Users ({email : req.body.email , password:hash})
                 const postedUser=await Users.create(userToPost)
-                res.send({msg:"You signed up "})
+                console.log(postedUser)
+                let token = jwt.sign({ id: postedUser._id }, 'Than0s was right',{expiresIn:"1h"})
+                console.log(token)
+                res.send({msg:"You signed up ", token:token})
             });
         });
     }else{
@@ -28,7 +31,7 @@ let findOneUser = async (req,res)=>{
     }else{
         bcrypt.compare(req.body.password, foundUser.password , async(err, result) =>{
             if(result){
-                var token = jwt.sign({ id: foundUser._id }, 'Than0s was right');
+                let token = jwt.sign({ id: foundUser._id }, 'Than0s was right',{expiresIn:"1h"});
                 res.send({token:token})
             }else{
                 res.send({msg:"Wrong password"})

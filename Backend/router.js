@@ -7,6 +7,7 @@ router.post("/signup",userController.postOneUser)
 router.post("/signin",userController.findOneUser)
 
 router.post("/create", reviewController.postReview)
+router.get("/reviews", reviewController.getAllReviews)
 
 
 

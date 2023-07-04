@@ -21,4 +21,23 @@ const postReview = async(req,res)=>{
     res.send({msg:"Review uploaded successfully"})
 }
 
-module.exports = {postReview}
+const getAllReviews = async(req,res)=>{
+    /* console.log(req.body.token)
+    if(!req.body.token){
+        res.send({msg:"You are not logged in"})
+        return
+    }
+    const payload= jwt.verify(req.body.token, "Than0s was right")
+    const findUser= await Users.findOne({_id : payload.id})
+    /* console.log(findUser) */
+    /* if(!findUser){
+        res.send({msg:"User doesn't exist"})
+       return
+    } */ 
+    const allReviews= await Reviews.find()
+    console.log(allReviews)
+    /* const toReturn = await Reviews.create(toPost) */
+    res.send({msg:"You got all the reviews", reviews:allReviews})
+}
+
+module.exports = {postReview , getAllReviews}
